@@ -1,7 +1,7 @@
 body {
-
+    display: flex;
+    flex-direction: column;
     background-color: grey;
-
     margin: 0;
     padding: 0;
 }
@@ -14,21 +14,42 @@ body {
     grid-template-rows: 1fr, 1fr, 1fr; */
 }
 nav {
-    height: 300px;
+    height: 200px;
 
 }
-.big_bg_pic{
-    width: 100vw;
-}
 .flying_ufo_container{
+    height: 200px;
+    max-width: 100%;
+}
+/* .flying_ufo_container div {
+    height: 200px;
+    max-width: 100%;
+} */
+
+img #top{
+    z-index: 1
+}
+img #background{
+    width: 100vw;
+    /* max-width:100%; */
+    /* max-height:100%; */
+
+
+}
+
+.print_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+
     background-color: black;
-    height: 400px;
+    height: 300px;
     width: 100vw;
 }
-.print_container{
-    background-color: black;
-    height: 600px;
-    width: 100vw;
+#print{
+    background-color: white;
+    width: 200px;
+    height: 200px;
 }
 
 .navbar_items a {
@@ -47,14 +68,3 @@ nav {
     text-decoration: none;
     font-family: Arial;
 }
-
-/* .view {
-    grid-area: 2 / 2 / 14 / 10;
-}
-
-}
-.grid div {
-    background-color: purple;
-} */
-
-/* ////////////// home //////////////////////////////////////// */

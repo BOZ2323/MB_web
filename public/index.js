@@ -1,41 +1,29 @@
-var canvas = document.querySelector('#paint');
-var ctx = canvas.getContext('2d');
+// var birdy = $("#top");
+// fly.on("mousedown", function() {
+//     $("#container").on("mousemove", function(e) {
+//         var offset = e.offsetX;
+//         console.log(e.target.id);
+//         if (e.target.id == "bar") {
+//             return;
+//         } else {
+//             slider.css({ left: offset });
+//             topPicture.css({ width: offset + "px" });
+//             // slider.css({ left: offset });
+//         }
+//     });
+// });
+// $(document).on("mouseup", function() {
+//     $("#container").off("mousemove");
+// });
 
-var sketch = document.querySelector('#sketch');
-var sketch_style = getComputedStyle(sketch);
 
-var mouse = {x: 0, y: 0};
-var last_mouse = {x: 0, y: 0};
+$(document).ready(function(){
+    alert($("div").scrollTop());
 
-canvas.addEventListener('mousemove', function(e) {
-    last_mouse.x = mouse.x;
-    last_mouse.y = mouse.y;
+});
 
-    mouse.x = e.pageX - this.offsetLeft;
-    mouse.y = e.pageY - this.offsetTop;
-}, false);
-
-ctx.lineWidth = 3;
-ctx.lineJoin = 'round';
-ctx.lineCap = 'round';
-ctx.strokeStyle = 'black';
-
-canvas.addEventListener('mousedown', function(e) {
-    canvas.addEventListener('mousemove', onPaint, false);
-}, false);
-
-canvas.addEventListener('mouseup', function() {
-    canvas.removeEventListener('mousemove', onPaint, false);
-    $('#hidden').val(canvas.toDataURL());
-    var getSignature = document.getElementById("paint").toDataURL();
-    console.log("getSignature",getSignature);
-    console.log("canvas.toDataURl", $('#hidden').val(canvas.toDataURL()));
-}, false);
-
-var onPaint = function() {
-    ctx.beginPath();
-    ctx.moveTo(last_mouse.x, last_mouse.y);
-    ctx.lineTo(mouse.x, mouse.y);
-    ctx.closePath();
-    ctx.stroke();
-};
+// $(document).ready(function(){
+//     if ($("birdy").scrollTop() + " 20px"){
+//         alert("du bist spitze!");
+//     }
+// });
