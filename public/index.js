@@ -1,30 +1,45 @@
-
-
-$(document).ready(function(){
-    alert($("div").scrollTop());
-
-});
-
-// $(document).ready(function(){
-//     if ($("birdy").scrollTop() + " 20px"){
-//         alert("du bist spitze!");
+// var birdy = document.getElementById("birdy");
+//
+// $(window).scroll(function (e) {
+//     var scroll = $(window).scrollTop();
+//     if(scroll > 100){
+//         console.log('scroll', scroll)
+//         birdy.classList.add("active");
+//
+//
 //     }
+//
 // });
 
-// var birdy = $("#top");
-// fly.on("mousedown", function() {
-//     $("#container").on("mousemove", function(e) {
-//         var offset = e.offsetX;
-//         console.log(e.target.id);
-//         if (e.target.id == "bar") {
-//             return;
-//         } else {
-//             slider.css({ left: offset });
-//             topPicture.css({ width: offset + "px" });
-//             // slider.css({ left: offset });
-//         }
-//     });
-// });
-// $(document).on("mouseup", function() {
-//     $("#container").off("mousemove");
-// });
+
+//------------------------ follow scroll bar movement ---------------------//
+
+var birdy = document.querySelector("#birdy");
+var yScrollPosition;
+
+// scroll position
+// var deltaY;
+// The original position
+// var origY;
+// The distance it can move
+// var distanceY;
+
+// function easeInQuart(t, b, c, d) {
+//   return c*(t/=d)*t*t*t+b;
+// }
+
+function setTranslate(yPos, el) {
+    var pos = -yPos;
+    el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+}
+
+function scrollLoop() {
+    // var y += easeInQuart(deltaY, origY, distanceY, 1);
+    yScrollPosition = window.scrollY;
+
+    setTranslate(yScrollPosition, birdy);
+
+    requestAnimationFrame(scrollLoop);
+}
+
+scrollLoop();

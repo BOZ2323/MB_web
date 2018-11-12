@@ -4,42 +4,43 @@
         <meta charset="utf-8">
         <title>{{ title }}</title>
         <link rel="stylesheet" href="/ufo_styles.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     </head>
     <body>
-
-
-
                 <nav>
                     {{> nav }}
                 </nav>
-
-
                 <div class="flying_ufo_container">
 
-                        <img id="top"src="voegelchen.png">
+                        <img id="birdy"src="voegelchen.png">
 
                         <div >
                             <img id="background"src="just-waves.png">
 
                         </div>
-                </div>
-                        <!-- <img id="background"src="just-waves_big.png"> -->
 
-                    <div id="print_container">
+
+
+                     <div id="print_container">
 
                         <div id="oben">
                                 <div id="print">1</div>
                                 <div id="print">2</div>
                                 <div id="print">3</div>
-                            </div>
-                            <div id="unten">
-                                    <div id="print">4</div>
-                                    <div id="print">5</div>
-                                    <div id="print">6</div>
-                                </div>
                         </div>
+                        <div id="unten">
+                                <div id="print">4</div>
+                                <div id="print">5</div>
+                                <div id="print">6</div>
+                        </div>
+                        <img id="print_background"src="just-waves.png">
+
                     </div>
+                </div>
+
+
+
 
                 <div class="view">
                     {{{ body }}}
@@ -49,6 +50,6 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
 
         <script src="/index.js" charset="utf-8"></script>
-
+        <img id="print_background"src="just-waves_large.png">
     </body>
 </html>
