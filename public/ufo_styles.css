@@ -6,13 +6,6 @@ body {
     padding: 0;
 }
 
-.grid {
-    /* display: grid;
-    grid-template-columns: repeat(10, 1fr);
-    grid-template-rows: repeat(20, 1fr); */
-    /* grid-template-columns: 1fr, 1fr, 1fr;
-    grid-template-rows: 1fr, 1fr, 1fr; */
-}
 nav {
     height: 200px;
 
@@ -21,35 +14,52 @@ nav {
     height: 200px;
     max-width: 100%;
 }
-/* .flying_ufo_container div {
-    height: 200px;
+#print_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    background-color: red;
+    height: 600px;
     max-width: 100%;
-} */
-
-img #top{
-    z-index: 1
 }
-img #background{
+#top{
+    position: absolute;
+    top: 200px;
+    left: 200px;
+
+}
+#background{
+    height: 100%;
     width: 100vw;
     /* max-width:100%; */
     /* max-height:100%; */
-
-
 }
-
-.print_container {
+#oben {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-around;
+    /* justify-content: space-around; */
+    justify-content: center;
 
     background-color: black;
     height: 300px;
     width: 100vw;
+    padding-top: 40px;
+}
+#unten {
+    display: flex;
+    flex-flow: row wrap;
+    /* justify-content: space-around; */
+    justify-content: center;
+
+    background-color: black;
+    height: 300px;
+    width: 100vw;
+    padding-bottom: 40px;
 }
 #print{
     background-color: white;
-    width: 200px;
-    height: 200px;
+    width: 260px;
+    height: 260px;
 }
 
 .navbar_items a {

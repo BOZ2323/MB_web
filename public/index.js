@@ -1,3 +1,16 @@
+
+
+$(document).ready(function(){
+    alert($("div").scrollTop());
+
+});
+
+// $(document).ready(function(){
+//     if ($("birdy").scrollTop() + " 20px"){
+//         alert("du bist spitze!");
+//     }
+// });
+
 // var birdy = $("#top");
 // fly.on("mousedown", function() {
 //     $("#container").on("mousemove", function(e) {
@@ -14,16 +27,4 @@
 // });
 // $(document).on("mouseup", function() {
 //     $("#container").off("mousemove");
-// });
-
-
-$(document).ready(function(){
-    alert($("div").scrollTop());
-
-});
-
-// $(document).ready(function(){
-//     if ($("birdy").scrollTop() + " 20px"){
-//         alert("du bist spitze!");
-//     }
 // });
