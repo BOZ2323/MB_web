@@ -1,3 +1,7 @@
+
+//------------------------ at scrollposition change to active ---------------------//
+
+
 // var birdy = document.getElementById("birdy");
 //
 // $(window).scroll(function (e) {
@@ -12,32 +16,42 @@
 // });
 
 
-//------------------------ follow scroll bar movement ---------------------//
+//------------------------ follow scroll bar movement UP ---------------------//
+
+// var birdy = document.querySelector("#birdy");
+// var yScrollPosition;
+//
+// function setTranslate(yPos, el) {
+//     var pos = -yPos;
+//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+// }
+//
+// function scrollLoop() {
+//
+//     yScrollPosition = window.scrollY;
+//
+//     setTranslate(yScrollPosition, birdy);
+//
+//     requestAnimationFrame(scrollLoop);
+// }
+//
+// scrollLoop();
+//------------------------ follow scroll bar movement HORIZONTAL -------------//
 
 var birdy = document.querySelector("#birdy");
 var yScrollPosition;
 
-// scroll position
-// var deltaY;
-// The original position
-// var origY;
-// The distance it can move
-// var distanceY;
-
-// function easeInQuart(t, b, c, d) {
-//   return c*(t/=d)*t*t*t+b;
-// }
-
-function setTranslate(yPos, el) {
+function setTranslateHorizontal(yPos, el) {
     var pos = -yPos;
     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+    
 }
 
 function scrollLoop() {
-    // var y += easeInQuart(deltaY, origY, distanceY, 1);
+
     yScrollPosition = window.scrollY;
 
-    setTranslate(yScrollPosition, birdy);
+    setTranslateHorizontal(yScrollPosition, birdy);
 
     requestAnimationFrame(scrollLoop);
 }
