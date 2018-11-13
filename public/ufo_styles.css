@@ -8,7 +8,7 @@ body {
 /* <!--------------------- nav ----------------------------> */
 
 nav {
-    height: 200px;
+    height: 295px;
 
 }
 .navbar_items a {
@@ -36,6 +36,7 @@ nav {
     margin-top: 150px;
     height: 645px;
     max-width: 100%;
+    margin-bottom: 100px;
 }
 
 #print_background{
@@ -52,7 +53,7 @@ nav {
 
 
 
-/* <!--------------------- birdy container ------------------> */
+/* <!--------------------- parallax birdy container ------------------> */
 
 .flying_ufo_container{
     height: 2400px;
@@ -69,18 +70,13 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.parallax {
-    /* The image used */
-    background-image: url('img_parallax.jpg');
+.second_component {
+    margin-top: 100px;
+    width: 61%;
+    margin:0 auto;
+    height:400px;
+    background-color:red;
 
-    /* Full height */
-    height: 100%;
-
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 /* <!--------------------- birdy 2 rows of images ------------------> */
