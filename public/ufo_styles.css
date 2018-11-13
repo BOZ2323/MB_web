@@ -28,7 +28,7 @@ nav {
     font-family: Arial;
 }
 
-#print_container{
+.second_component{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -70,12 +70,23 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.second_component {
+.first_component {
+    /* margin-top: 100px; */
+    width: 61%;
+    margin:0 auto;
+    height:400px;
+    font-size: 230px;
+    color: white;
+    font-family: Phosphate;
+    /* background-color: white; */
+
+}
+.third_component {
     margin-top: 100px;
     width: 61%;
     margin:0 auto;
     height:400px;
-    background-color:red;
+    background-color: white;
 
 }
 
@@ -88,9 +99,10 @@ nav {
     /* justify-content: space-around; */
     justify-content: center;
     background-color: black;
-    height: 300px;
-    width: 61vw;
-    padding-top: 40px;
+    height: 410px;
+    width: 86vw;
+    padding-top: 25;
+
 
 }
 #unten {
@@ -98,23 +110,24 @@ nav {
     justify-content: space-around;
     justify-content: center;
     background-color: black;
-    height: 300px;
-    width: 61vw;
-    padding-bottom: 5px;
+    height: 410px;
+    width: 86vw;
+    margin-top: 80px;
+
 }
 #print{
     background-color: white;
-    width: 250px;
-    height: 250px;
+    width: 380px;
+    height: 380px;
 }
 
 /* <!--------------------- birdy ----------------------------> */
 
 #birdy{
     position: absolute;
-    top: 260px;
-    right: 200px;
-    transform: translate3d(1184px, 251px, 0px);
+    top: 1021px;
+    right: 325px;
+    /* transform: translate3d(1184px, 251px, 0px); */
 
     /* transform: translate3d(354px, 61px, 0px);
     transform:translateX(-25px); */

@@ -43,8 +43,9 @@ var yScrollPosition;
 
 function setTranslateHorizontal(yPos, el) {
     var pos = -yPos;
-    el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+    el.style.transform = "translate3d(0px, " + pos + "px, 30px)";
     
+
 }
 
 function scrollLoop() {
