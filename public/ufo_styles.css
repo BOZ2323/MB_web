@@ -65,26 +65,20 @@ nav {
 
 
 #oben {
-    position: absolute;
-    z-index: 1;
     display: flex;
     /* flex-flow: row wrap; */
     /* justify-content: space-around; */
     justify-content: center;
-
     background-color: black;
     height: 300px;
     width: 61vw;
     padding-top: 40px;
+
 }
 #unten {
-    position: absolute;
-    z-index: 1;
     display: flex;
-
-    /* justify-content: space-around; */
+    justify-content: space-around;
     justify-content: center;
-
     background-color: black;
     height: 300px;
     width: 61vw;
