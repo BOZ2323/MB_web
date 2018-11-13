@@ -82,12 +82,12 @@ nav {
 
 }
 .third_component {
-    margin-top: 100px;
-    width: 61%;
-    margin:0 auto;
-    height:400px;
+    position: relative;
+    top: 314px;
+    width: 86%;
+    margin: 0 auto;
+    height: 400px;
     background-color: white;
-
 }
 
 /* <!--------------------- birdy 2 rows of images ------------------> */
@@ -101,7 +101,8 @@ nav {
     background-color: black;
     height: 410px;
     width: 86vw;
-    padding-top: 25;
+    padding-top: 25px;
+
 
 
 }
@@ -112,13 +113,14 @@ nav {
     background-color: black;
     height: 410px;
     width: 86vw;
-    margin-top: 80px;
+    padding-top: 25px;
 
 }
 #print{
-    background-color: white;
+    background-color: black;
     width: 380px;
     height: 380px;
+
 }
 
 /* <!--------------------- birdy ----------------------------> */
