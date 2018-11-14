@@ -1,7 +1,8 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color: grey;
+    /* background-image: url("/BG_top_completeElement_opt.png"); */
+    /* background-color: grey; */
     margin: 0;
     padding: 0;
 }
@@ -27,14 +28,29 @@ nav {
     text-decoration: none;
     font-family: Arial;
 }
+.first_component {
+    /* margin-top: 100px; */
+    width: 100%;
+    margin:0 auto;
+    height: 800px;
+    /* background-image: url("/BG_top_completeElement_opt.png"); */
+}
+#oofozoo{
+    width: 50%;
+    z-index: 1
+}
+/* #first_component_bg{
+
+    max-width: 100%;
+} */
 
 .second_component{
     display: flex;
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
     justify-content: center;
-
+    margin:0 auto;
     margin-top: 150px;
-    height: 645px;
+    max-height: 800px;
     max-width: 100%;
     margin-bottom: 100px;
 }
@@ -56,10 +72,12 @@ nav {
 /* <!--------------------- parallax birdy container ------------------> */
 
 .flying_ufo_container{
+    /* display: flex;
+    justify-content: center; */
     height: 2400px;
     max-width: 100%;
     overflow: hidden;
-    background-image: url("/BG_top_completeElement_opt.png");
+    /* background-image: url("/BG_top_completeElement_opt.png"); */
     /* create parallax effect  */
     /* Full height */
     /* height: 100%; */
@@ -70,17 +88,19 @@ nav {
     background-repeat: no-repeat;
     background-size: cover;
 }
-.first_component {
-    /* margin-top: 100px; */
-    width: 61%;
+#gallery_pic{
     margin:0 auto;
-    height:400px;
-    font-size: 230px;
-    color: white;
-    font-family: Phosphate;
-    /* background-color: white; */
-
+    width: 80%;
+    height: 80%;
 }
+
+#flying_ufo_bg_pic{
+
+    max-width: 100%;
+    max-height: 100%;
+}
+
+
 /* ----------------------- red birdy flying horizontally ------------------ */
 /* #wrapper {
     position: absolute;
@@ -104,7 +124,7 @@ nav {
     height: 400px;
     background-color: white;
 }
-#birdy_red{
+/* #birdy_red{
     position: absolute;
         width: 50px;
         height: 100px;
@@ -114,7 +134,7 @@ nav {
 #wrapper:hover #birdy_red {
     transform: translateX(-100%);
     border-style: none;
-} */
+}  */
 
 
 
