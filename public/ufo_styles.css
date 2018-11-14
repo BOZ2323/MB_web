@@ -61,6 +61,7 @@ nav {
     margin:0 auto;
     height: 730px;
     width: 80%;
+    overflow: hidden;
 }
 #cloud{
     padding-left: 600px;
@@ -68,13 +69,26 @@ nav {
     width: 23%;
     height: 30%;
 }
+.section_fotos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 950px;
+    width: 80%;
+    overflow: hidden;
+}
+#foto{
+    object-fit: cover;
+    margin: 0 auto;
+    width: 100%;
+}
 
 .second_component{
     display: flex;
     /* flex-flow: row wrap; */
     justify-content: center;
     margin:0 auto;
-    margin-top: 150px;
     max-height: 800px;
     max-width: 100%;
     margin-bottom: 100px;
