@@ -44,19 +44,31 @@ nav {
     width: 50%;
 
 }
+#rover{
+    position: absolute;
+    left: 800px;
+    top: 645.2px;
+    width: 13%;
+}
+
 
 
 .blue_component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #29abe2;
     margin:0 auto;
     height: 730px;
     width: 80%;
 }
 #cloud{
+    padding-left: 600px;
     padding-top: 50px;
     width: 23%;
     height: 30%;
 }
+
 .second_component{
     display: flex;
     /* flex-flow: row wrap; */
