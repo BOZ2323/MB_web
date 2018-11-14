@@ -18,43 +18,42 @@
 
 //------------------------ follow scroll bar movement UP ---------------------//
 
-// var birdy = document.querySelector("#birdy");
-// var yScrollPosition;
-//
-// function setTranslate(yPos, el) {
-//     var pos = -yPos;
-//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
-// }
-//
-// function scrollLoop() {
-//
-//     yScrollPosition = window.scrollY;
-//
-//     setTranslate(yScrollPosition, birdy);
-//
-//     requestAnimationFrame(scrollLoop);
-// }
-//
-// scrollLoop();
-//------------------------ follow scroll bar movement HORIZONTAL -------------//
-
 var birdy = document.querySelector("#birdy");
 var yScrollPosition;
 
-function setTranslateHorizontal(yPos, el) {
+function setTranslate(yPos, el) {
     var pos = -yPos;
-    el.style.transform = "translate3d(0px, " + pos + "px, 30px)";
-    
-
+    el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
 }
 
 function scrollLoop() {
 
     yScrollPosition = window.scrollY;
 
-    setTranslateHorizontal(yScrollPosition, birdy);
+    setTranslate(yScrollPosition, birdy);
 
     requestAnimationFrame(scrollLoop);
 }
 
 scrollLoop();
+//------------------------ follow scroll bar movement HORIZONTAL -------------//
+
+var rover = document.querySelector("#rover");
+
+
+function setTranslateHorizontal(yPos, el) {
+    var pos = -yPos;
+    var xPos = pos;
+    el.style.transform = "translate3d(" + xPos + "px, 0px, 30px)";
+}
+
+function horizontalMove() {
+
+    yScrollPosition = window.scrollY;
+
+    setTranslateHorizontal(yScrollPosition, rover);
+
+    requestAnimationFrame(horizontalMove);
+}
+
+horizontalMove();
