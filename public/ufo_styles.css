@@ -28,6 +28,7 @@ nav {
     text-decoration: none;
     font-family: Arial;
 }
+/* <!--------------------- first_component ------------------> */
 .first_component {
     display: flex;
     justify-content: center;
@@ -36,6 +37,28 @@ nav {
     margin: 0 auto;
     height: 730px;
     overflow: hidden;
+}
+.einleitungstext{
+    position: absolute;
+    margin: 0 auto;
+    width: 50%;
+    height: 300px;
+    top: 77px;
+}
+.einleitungstext p{
+    font-size: 20px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    line-height: 1.5;
+
+}
+#star_top{
+    right: 100px;
+    position: absolute;
+    top: 400px;
+    width: 5%;
+
 }
 
 #oofozoo{
@@ -46,9 +69,24 @@ nav {
 }
 #rover{
     position: absolute;
-    left: 800px;
+    left: 1035px;
     top: 645.2px;
     width: 13%;
+}
+#roverII{
+    position: absolute;
+    left: 306px;
+    top: 7543px;
+    width: 13%;
+}
+#adress_area{
+    height: 300px
+    width: 100%;
+    background-color: grey;
+}
+#unten{
+    display: flex;
+    justify-content: center;
 }
 
 
@@ -64,11 +102,33 @@ nav {
     overflow: hidden;
 }
 #cloud{
+    position: absolute;
     padding-left: 600px;
     padding-top: 50px;
     width: 23%;
     height: 30%;
+    z-index: 10;
 }
+#OFR{
+    padding-top: 50px;
+    width: 50%;
+
+}
+#star_grey{
+    left: 250px;
+    position: absolute;
+    top: 1120px;
+    width: 10%;
+
+}
+#star_top{
+    left: 250px;
+    position: absolute;
+    top: 1120px;
+    width: 10%;
+
+}
+
 .section_fotos{
     display: flex;
     justify-content: center;
@@ -82,6 +142,26 @@ nav {
     object-fit: cover;
     margin: 0 auto;
     width: 100%;
+}
+#foto_108{
+    object-fit: cover;
+    margin: 0 auto;
+    width: 108%;
+}
+#order_button{
+    position: relative;
+    width: 50%;
+    left: 130px;
+}
+.foto_text p{
+    position: relative;
+    z-index: 15;
+    font-size: 16px;
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    left: 130px;
 }
 
 .second_component{
@@ -193,16 +273,7 @@ nav {
 
 
 }
-#unten {
-    display: flex;
-    justify-content: space-around;
-    justify-content: center;
-    background-color: black;
-    height: 410px;
-    width: 86vw;
-    padding-top: 25px;
 
-}
 #print{
     background-color: black;
     width: 380px;
@@ -211,11 +282,17 @@ nav {
 }
 
 /* <!--------------------- birdy ----------------------------> */
-
-#birdy{
+#ufo_1{
     position: absolute;
     top: 1021px;
+    left: 325px;
+    width: 6%;
+}
+#birdy{
+    position: absolute;
+    top: 1720px;
     right: 325px;
+    z-index: 15px;
     /* transform: translate3d(1184px, 251px, 0px); */
 
     /* transform: translate3d(354px, 61px, 0px);
