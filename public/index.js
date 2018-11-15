@@ -24,16 +24,7 @@ function setUfo(yPos, el) {
     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
 }
 
-// function scrollLoopUfo() {
-//
-//     yScrollPosition = window.scrollY;
-//
-//     setUfo(yScrollPosition, ufo);
-//
-//     requestAnimationFrame(scrollLoopUfo,5);
-// }
-//
-// scrollLoopUfo();
+
 var framesToSkip = 120,
     counter = 0;
 
@@ -144,4 +135,4 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
-}; 
+};
