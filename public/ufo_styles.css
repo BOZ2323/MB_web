@@ -138,7 +138,67 @@ nav {
     margin:0 auto;
     height: 950px;
     width: 80%;
-    /* overflow: hidden; */
+
+}
+.section_fotos_1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_0002_Ebene 2.jpg");
+}
+.section_fotos_2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_0000_Ebene 4.jpg");
+}
+.section_fotos_3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_0001_Ebene 3.jpg");
+}
+.section_fotos_4{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_0003_Ebene 1.jpg");
+}
+.section_fotos_5{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_Sternie.jpg");
+}
+.section_fotos_6{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("Foto_Quelle_2000px_Watchman.jpg");
 }
 #foto{
     object-fit: cover;
@@ -188,10 +248,11 @@ nav {
 }
 #order_button{
 position: relative;
-left: 200px;
+left: -492px;
 top: 140px;
 z-index: 15;
 outline: none;
+background-color: #bcd442;
 
 color: white;
 font-size: 20px;
@@ -200,12 +261,12 @@ padding: 13px;
 -webkit-border-radius: 32.027027027027025px;
 -moz-border-radius: 32.027027027027025px;
 border-radius: 32.027027027027025px;
-background-color: green;
-background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
+
+/* background: -moz-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
 background: -webkit-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
 background: -o-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
 background: -ms-linear-gradient(0deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
-background: linear-gradient(270deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%);
+background: linear-gradient(270deg, rgb(0, 0, 0) 0%, rgb(0, 0, 0) 0%); */
 /* -webkit-box-shadow: 0px 2px 1px rgba(50, 50, 50, 0.75);
 -moz-box-shadow:    0px 2px 1px rgba(50, 50, 50, 0.75);
 box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75); */
@@ -219,7 +280,7 @@ box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75); */
     color: black;
     text-align: left;
     line-height: 1.5;
-    left: 320px;
+    left: -380px;
     width: 200px;
 }
 
