@@ -283,6 +283,19 @@ box-shadow:         0px 2px 1px rgba(50, 50, 50, 0.75); */
     left: -380px;
     width: 200px;
 }
+.foto_text_2 p{
+    top: 2650px;
+    position: relative;
+    z-index: 15;
+    font-size: 16px;
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    left: -380px;
+    width: 200px;
+}
+
 
 .second_component{
     display: flex;

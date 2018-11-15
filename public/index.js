@@ -45,7 +45,7 @@ function loop() {
     requestAnimationFrame(loop);
 }
 loop();
-//------------------------ follow scroll bar movement UP ---------------------//
+//------------------------ follow scroll vertical movement UP ---------------------//
 var birdy = document.querySelector("#birdy");
 
 
@@ -64,6 +64,25 @@ function scrollLoop() {
 }
 
 scrollLoop();
+//------------------------ move text vertically ---------------------//
+var text = document.querySelector(".foto_text_2");
+
+
+function setMovementText(yPos, el) {
+    var pos = -yPos;
+    el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+}
+
+function scrollText() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, text);
+
+    requestAnimationFrame(scrollText);
+}
+
+scrollText();
 //------------------------ follow scroll bar movement HORIZONTAL -------------//
 
 var rover = document.querySelector("#rover");
