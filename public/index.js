@@ -105,12 +105,6 @@ scrollTexto();
 //------------------------ move button 3 vertically ---------------------//
 var button_3 = document.querySelector("#order_button_3");
 
-
-// function setMovementText(yPos, el) {
-//     var pos = -yPos;
-//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
-// }
-
 function scrollButton_3() {
 
     yScrollPosition = window.scrollY;
@@ -121,6 +115,21 @@ function scrollButton_3() {
 }
 
 scrollButton_3();
+
+//------------------------ first comp: move big_ufo vertically ---------------------//
+var big_ufo = document.querySelector("#big_ufo");
+
+function scroll_big_ufo() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, big_ufo);
+
+    requestAnimationFrame(scroll_big_ufo);
+}
+
+scroll_big_ufo();
+
 
 //------------------------ move text 3 vertically ---------------------//
 // var text_3 = document.querySelector(".foto_text_3");

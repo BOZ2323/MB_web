@@ -67,6 +67,12 @@ nav {
     width: 50%;
 
 }
+#big_ufo{
+    right: 800px;
+    position: absolute;
+    top: 400px;
+    width: -70%;
+}
 #rover{
     position: absolute;
     left: 1035px;
