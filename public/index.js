@@ -136,6 +136,34 @@ function scrollButton_3() {
 
 scrollButton_3();
 
+//------------------------ move button 4 vertically ---------------------//
+var button_4 = document.querySelector("#order_button_4");
+
+function scrollButton_4() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, button_4);
+
+    requestAnimationFrame(scrollButton_4);
+}
+
+scrollButton_4();
+
+//------------------------ move text 4 vertically ---------------------//
+var text_4 = document.querySelector(".foto_text_4");
+
+function scrollText_4() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, text_4);
+
+    requestAnimationFrame(scrollText_4);
+}
+
+scrollText_4();
+
 //------------------------ first comp: move big_ufo vertically ---------------------//
 var big_ufo = document.querySelector("#big_ufo");
 
