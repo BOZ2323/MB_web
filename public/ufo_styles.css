@@ -316,6 +316,38 @@ padding: 13px;
 -moz-border-radius: 32.027027027027025px;
 border-radius: 32.027027027027025px;
 }
+#order_button_3{
+position: relative;
+left: 330px;
+top: 3660px;
+z-index: 15;
+outline: none;
+background-color: #bcd442;
+
+color: white;
+font-size: 20px;
+padding: 13px;
+
+-webkit-border-radius: 32.027027027027025px;
+-moz-border-radius: 32.027027027027025px;
+border-radius: 32.027027027027025px;
+}
+#order_button_4{
+position: relative;
+left: -492px;
+top: 2810px;
+z-index: 15;
+outline: none;
+background-color: #bcd442;
+
+color: white;
+font-size: 20px;
+padding: 13px;
+
+-webkit-border-radius: 32.027027027027025px;
+-moz-border-radius: 32.027027027027025px;
+border-radius: 32.027027027027025px;
+}
 .foto_text p{
     position: relative;
     z-index: 15;
@@ -328,6 +360,30 @@ border-radius: 32.027027027027025px;
     width: 200px;
 }
 .foto_text_2 p{
+    top: 2650px;
+    position: relative;
+    z-index: 15;
+    font-size: 16px;
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    left: -380px;
+    width: 200px;
+}
+.foto_text_3 p{
+    top: 3550px;
+    position: relative;
+    z-index: 15;
+    font-size: 16px;
+    font-family: Arial;
+    color: black;
+    text-align: left;
+    line-height: 1.5;
+    left: 420px;
+    width: 200px;
+}
+.foto_text_4 p{
     top: 2650px;
     position: relative;
     z-index: 15;

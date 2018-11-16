@@ -83,6 +83,60 @@ function scrollText() {
 }
 
 scrollText();
+//------------------------ move text 3 vertically ---------------------//
+var texto = document.querySelector(".foto_text_3");
+
+
+// function setMovementText(yPos, el) {
+//     var pos = -yPos;
+//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+// }
+
+function scrollTexto() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, texto);
+
+    requestAnimationFrame(scrollTexto);
+}
+
+scrollTexto();
+//------------------------ move button 3 vertically ---------------------//
+var button_3 = document.querySelector("#order_button_3");
+
+
+// function setMovementText(yPos, el) {
+//     var pos = -yPos;
+//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+// }
+
+function scrollButton_3() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, button_3);
+
+    requestAnimationFrame(scrollButton_3);
+}
+
+scrollButton_3();
+
+//------------------------ move text 3 vertically ---------------------//
+// var text_3 = document.querySelector(".foto_text_3");
+// var button_3 = document.querySelector("#order_button_3");
+//
+// function scroll(x) {
+//
+//     yScrollPosition = window.scrollY; /// absoluter wert, was am code ändern
+//
+//     setMovementText(yScrollPosition, x);
+//
+//     requestAnimationFrame(scroll); hier: (function scroll(x)) reinsetzen oder nur (scroll(x))
+// }
+//
+// scroll(text_3);
+// scroll(button_3);
 
 //------------------------ move text vertically ---------------------//
 var button = document.querySelector("#order_button_2");
