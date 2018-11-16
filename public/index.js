@@ -83,6 +83,26 @@ function scrollText() {
 }
 
 scrollText();
+
+//------------------------ move text vertically ---------------------//
+var button = document.querySelector("#order_button_2");
+
+
+function setMovementButton(yPos, el) {
+    var pos = -yPos;
+    el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+}
+
+function scrollButton() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementButton(yScrollPosition, button);
+
+    requestAnimationFrame(scrollButton);
+}
+
+scrollButton();
 //------------------------ follow scroll bar movement HORIZONTAL -------------//
 
 var rover = document.querySelector("#rover");
