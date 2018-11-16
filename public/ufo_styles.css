@@ -231,20 +231,23 @@ nav {
 /* Modal Content/Box */
 .modal-content {
     position: relative;
-    top: 100px;
+    top: 83px;
     left: 416px;
     background-color: #03A9F4;
     margin: 0 auto; /* 15% from the top and centered */
-    padding: 20px;
-    height: 500px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    height: 575px;
     width: 19%;
 }
 #modal_text{
-    font-size: 16px;
+    font-size: 40px;
     font-family: Arial;
     color: white;
     text-align: left;
-    line-height: 1.5;
+    line-height: 1;
 
 
 }
@@ -357,7 +360,7 @@ border-radius: 32.027027027027025px;
 #order_button_4{
 position: relative;
 left: -492px;
-top: 5099px;
+top: 5199px;
 z-index: 15;
 outline: none;
 background-color: #bcd442;
