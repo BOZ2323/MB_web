@@ -46,6 +46,8 @@ nav {
     top: 77px;
 }
 .einleitungstext p{
+    top: -69px;
+    position: relative;
     font-size: 25px;
     font-family: Arial;
     color: white;
@@ -80,6 +82,12 @@ nav {
     width: 13%;
 }
 #roverII{
+    position: absolute;
+    left: 306px;
+    top: 7777px;
+    width: 13%;
+}
+#ufo_adressfeld{
     position: absolute;
     left: 306px;
     top: 7777px;
@@ -370,7 +378,7 @@ border-radius: 32.027027027027025px;
 #order_button_3{
 position: relative;
 left: 330px;
-top: 3660px;
+top: 4015px;
 z-index: 15;
 outline: none;
 background-color: #bcd442;
@@ -468,7 +476,7 @@ border-radius: 32.027027027027025px;
     width: 200px;
 }
 .foto_text_3 p{
-    top: 3550px;
+    top: 3880px;
     position: relative;
     z-index: 15;
     font-size: 16px;
