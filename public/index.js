@@ -83,6 +83,26 @@ function scrollText() {
 }
 
 scrollText();
+
+//------------------------ move text 1 vertically ---------------------//
+var text_1 = document.querySelector(".foto_text_1");
+
+
+// function setMovementText(yPos, el) {
+//     var pos = -yPos;
+//     el.style.transform = "translate3d(0px, " + pos + "px, 0px)";
+// }
+
+function scrollText_1() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, text_1);
+
+    requestAnimationFrame(scrollText_1);
+}
+
+scrollText_1();
 //------------------------ move text 3 vertically ---------------------//
 var texto = document.querySelector(".foto_text_3");
 
@@ -146,6 +166,22 @@ scroll_big_ufo();
 //
 // scroll(text_3);
 // scroll(button_3);
+
+
+//------------------------ move button 1 vertically ---------------------//
+var button_1 = document.querySelector("#order_button_1");
+
+function scrollButton_1() {
+
+    yScrollPosition = window.scrollY;
+
+    setMovementText(yScrollPosition, button_1);
+
+    requestAnimationFrame(scrollButton_1);
+}
+
+scrollButton_1();
+
 
 //------------------------ move text vertically ---------------------//
 var button = document.querySelector("#order_button_2");
@@ -217,7 +253,7 @@ horizontalMoveRight();
 var modal = document.getElementById('myModal');
 
 // Get the button that opens the modal
-var btn = document.getElementById("order_button");
+var btn = document.getElementById("order_button_1");
 
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
