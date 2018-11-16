@@ -316,7 +316,7 @@ var roverII = document.querySelector("#roverII");
 
 function setHorizontal(yPos, el) {
     var pos = -yPos;
-    var xPos = pos+7300;
+    var xPos = pos+7800;
     el.style.transform = "translate3d(" + xPos + "px, 0px, 30px)";
 }
 

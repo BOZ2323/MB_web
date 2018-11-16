@@ -82,15 +82,31 @@ nav {
 #roverII{
     position: absolute;
     left: 306px;
-    top: 7753px;
+    top: 7777px;
     width: 13%;
 }
-#adress_area{
+.adress p{
+    left: 126px;
+    top: -483px;
+    position: relative;
+    z-index: 15;
+    font-size: 25px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    line-height: 1.7;
 
-    height: 300px;
-    width: 300px;
-
-    background-color: grey;
+}
+.impressum p{
+    left: -138px;
+    top: -335px;
+    position: relative;
+    z-index: 15;
+    font-size: 19px;
+    font-family: Arial;
+    color: white;
+    text-align: center;
+    line-height: 1.7;
 
 }
 #unten{
@@ -205,6 +221,16 @@ nav {
     width: 80%;
     background-size: cover;
     background-image: url("Foto_Quelle_2000px_Watchman.jpg");
+}
+.section_fotos_7{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 auto;
+    height: 1080px;
+    width: 80%;
+    background-size: cover;
+    background-image: url("/screenprints/BG_ganz_unten.png");
 }
 #foto{
     object-fit: cover;
